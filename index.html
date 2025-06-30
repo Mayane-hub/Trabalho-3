@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estacionamento de Bicicletas - IFCE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Gerenciamento de Estacionamento de Bicicletas</h1>
+  </header>
+
+  <main id="parking-list" aria-live="polite">
+    <!-- Os pontos serao inseridos via JS -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <h2 id="modal-title">Detalhes do Ponto</h2>
+      <p id="modal-info"></p>
+      <button onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>IFCE - Campus Maracanau | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
